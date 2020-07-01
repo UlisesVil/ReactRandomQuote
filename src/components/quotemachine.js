@@ -120,8 +120,8 @@ import React from 'react';
           </div> 
 
           <div id="social">
-            <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer"><img alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" width="30px" /></a>
-            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=" target="_blank" rel="noopener noreferrer"><img alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" width="30px" /></a>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" width="30px" /></a>
+            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" width="30px" /></a>
           </div>
 
         </div>
