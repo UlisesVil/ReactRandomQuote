@@ -2,34 +2,20 @@
 //Script in React Render Method
 import React from 'react';
 
-
-
-
-
-
-
-  
   class QuoteMachine extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        
         randomIndex: Math.floor(Math.random() * 50)
       }
       this.ask = this.ask.bind(this);
-     
     }
 
-    ask() {
-      
-        this.setState({
-          randomIndex: Math.floor(Math.random() * 50),
-          
-        });
-      
+    ask() {      
+      this.setState({
+        randomIndex: Math.floor(Math.random() * 50),
+      });
     }
-
-    
 
     render() {
       const possibleAnswers = [
@@ -83,7 +69,6 @@ import React from 'react';
         {quote: "“I don’t want to achieve immortality through my work. I want to achieve it through not dying.”", author: " – Woody Allen"},
         {quote: "“Everybody laughs the same in every language because laughter is a universal connection.”", author: " – Yakov Smirnoff"},
         {quote: "“You’ve got to be very careful if you don’t know where you are going, because you might not get there.”", author: " – Yogi Berra"}
-        
       ];
 
       const quoteText = possibleAnswers[this.state.randomIndex].quote;
@@ -92,74 +77,31 @@ import React from 'react';
       return (
 
         <div id="quote-box">
-          
-          <h2>A quote for you:</h2>
+          <h2>Your Random Quote:</h2>
           
           <div id="cont">
-          
             <div id="cont2">
-              
-          
               <p id="text">
                 {quoteText}          
               </p>
-
               <p id="author">
                 {authorText}          
               </p>
-
             </div>
               
             <div id="randomB">
               <button id="new-quote" onClick={this.ask}>
                         Random Quote!
               </button>
-                                
             </div>
-
           </div> 
 
           <div id="social">
-            <a id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" width="30px" /></a>
-            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" width="30px" /></a>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img class="twitter" alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" /></a>
+            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img class="face" alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" /></a>
           </div>
-
         </div>
       );
     }
   };
-
-
-
 export default QuoteMachine;
-
-
-
-
-
-
-/*
-const e = React.createElement;
-
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-
-const domContainer = document.querySelector('#quote-box"');
-ReactDOM.render(e(LikeButton), domContainer);
-*/
