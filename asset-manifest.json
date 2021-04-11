@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReactRandomQuote/static/css/main.a9551666.chunk.css",
+    "main.css": "/ReactRandomQuote/static/css/main.29d41385.chunk.css",
     "main.js": "/ReactRandomQuote/static/js/main.4e0d93c2.chunk.js",
     "main.js.map": "/ReactRandomQuote/static/js/main.4e0d93c2.chunk.js.map",
     "runtime-main.js": "/ReactRandomQuote/static/js/runtime-main.9fd4a80f.js",
@@ -8,16 +8,16 @@
     "static/js/2.56fac647.chunk.js": "/ReactRandomQuote/static/js/2.56fac647.chunk.js",
     "static/js/2.56fac647.chunk.js.map": "/ReactRandomQuote/static/js/2.56fac647.chunk.js.map",
     "index.html": "/ReactRandomQuote/index.html",
-    "precache-manifest.990db50680d626ad614b5bd19e10f2f8.js": "/ReactRandomQuote/precache-manifest.990db50680d626ad614b5bd19e10f2f8.js",
+    "precache-manifest.8b417af5ec1aff824a50ea34df080772.js": "/ReactRandomQuote/precache-manifest.8b417af5ec1aff824a50ea34df080772.js",
     "service-worker.js": "/ReactRandomQuote/service-worker.js",
-    "static/css/main.a9551666.chunk.css.map": "/ReactRandomQuote/static/css/main.a9551666.chunk.css.map",
+    "static/css/main.29d41385.chunk.css.map": "/ReactRandomQuote/static/css/main.29d41385.chunk.css.map",
     "static/js/2.56fac647.chunk.js.LICENSE.txt": "/ReactRandomQuote/static/js/2.56fac647.chunk.js.LICENSE.txt",
     "static/media/App.css": "/ReactRandomQuote/static/media/pap08.0f2095a9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9fd4a80f.js",
     "static/js/2.56fac647.chunk.js",
-    "static/css/main.a9551666.chunk.css",
+    "static/css/main.29d41385.chunk.css",
     "static/js/main.4e0d93c2.chunk.js"
   ]
 }
