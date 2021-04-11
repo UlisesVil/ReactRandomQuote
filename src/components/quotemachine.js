@@ -1,5 +1,3 @@
-
-//Script in React Render Method
 import React from 'react';
 
   class QuoteMachine extends React.Component {
@@ -75,10 +73,8 @@ import React from 'react';
       const authorText = possibleAnswers[this.state.randomIndex].author;
     
       return (
-
         <div id="quote-box">
-          <h2>Your Random Quote:</h2>
-          
+          <h2>Random Quote:</h2>
           <div id="cont">
             <div id="cont2">
               <p id="text">
@@ -88,17 +84,19 @@ import React from 'react';
                 {authorText}          
               </p>
             </div>
-              
             <div id="randomB">
               <button id="new-quote" onClick={this.ask}>
-                        Random Quote!
+                Random Quote!
               </button>
             </div>
           </div> 
-
           <div id="social">
-            <a id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img class="twitter" alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" /></a>
-            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank"><img class="face" alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" /></a>
+            <a id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank">
+              <img class="twitter" alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" />
+            </a>
+            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank">
+              <img class="face" alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" />
+            </a>
           </div>
         </div>
       );
