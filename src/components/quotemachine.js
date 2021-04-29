@@ -44,7 +44,6 @@ import React from 'react';
         {quote: "“The two most common elements in the universe are hydrogen and stupidity.”", author: " – Harlan Ellison"},
         {quote: "“I’ve got all the money I’ll ever need, if I die by four o’clock.”", author: " – Henny Youngman"},
         {quote: "“You tried your best and you failed miserably. The lesson is ‘never try.'”", author: " – Homer Simpson"},
-        {quote: "“I’d rather have 1% of the effort of 100 men than 100% of my own effort.”", author: " – J. Paul Getty"},
         {quote: "“Money is not the most important thing in the world. Love is. Fortunately, I love money.”", author: " – Jackie Mason"},
         {quote: "“Here’s something to think about: How come you never see a headline like ‘Psychic Wins Lottery’?”", author: " – Jay Leno"},
         {quote: "“Avoid fruits and nuts. You are what you eat.”", author: " – Jim Davis"},
@@ -71,7 +70,8 @@ import React from 'react';
 
       const quoteText = possibleAnswers[this.state.randomIndex].quote;
       const authorText = possibleAnswers[this.state.randomIndex].author;
-    
+      const twit='https://twitter.com/intent/tweet?text='+quoteText+authorText+' '+'https://ulisesvil.github.io/ReactRandomQuote/';
+      
       return (
         <div id="quote-box">
           <h2>Random Quote:</h2>
@@ -91,12 +91,14 @@ import React from 'react';
             </div>
           </div> 
           <div id="social">
-            <a id="tweet-quote" href="https://twitter.com/intent/tweet?hashtags=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank">
-              <img class="twitter" alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" />
+            <a id="tweet-quote" href={twit} target="_blank">
+              <img className="twitter" alt ="twitter ico"src="https://image.flaticon.com/icons/svg/733/733635.svg" />
             </a>
-            <a id="facebook-quote" href="https://www.facebook.com/sharer/sharer.php?u=https://ulisesvil.github.io/ReactRandomQuote/" target="_blank">
-              <img class="face" alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" />
-            </a>
+            <div  id="facebook-quote" data-href="https://ulisesvil.github.io/ReactRandomQuote/"  >
+              <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fulisesvil.github.io%2FReactRandomQuote%2F&amp;src=sdkpreparse" className="fb-xfbml-parse-ignore">
+                <img className="face" alt="facebook ico"src="https://image.flaticon.com/icons/svg/733/733605.svg" />
+              </a>
+            </div>
           </div>
         </div>
       );
